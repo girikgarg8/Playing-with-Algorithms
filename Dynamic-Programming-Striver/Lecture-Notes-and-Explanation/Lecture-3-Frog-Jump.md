@@ -72,6 +72,12 @@ T(n) = 2^n + (2^n-1) * c which is exponential in nature.
 
 Space complexity for recursive solution: O(N) due to the auxiliary stack space. At any given moment of time, a maximum of n recursive stack frames can be in the memory.
 
+**Dry run**
+
+Let's dry run on the test case: `10 20 30 10` , the answer to this problem is 20, as the frog can jump from 1st stair to 2nd stair (|20-10| = 10 energy lost).  Then a jump from the 2nd stair to the last stair (|10-20| = 10 energy lost). So, the total energy lost is 20 which is the minimum. 
+
+![Frog-jump-dry-run](../assets/Frog-jump-dry-run.png)
+
 **Memoized solution**
 
 ```

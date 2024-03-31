@@ -67,6 +67,17 @@ Putting k=n, we have T(n) = 2^n * T(1) + (2^n-1) * c which is
 2^(n+1) + (c-1), which is exponential in nature.
 ```
 
+**Let's dry run on an example test case**
+
+```
+Input: nums = [1,2,3,1]
+Output: 4
+Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).
+Total amount you can rob = 1 + 3 = 4.
+```
+
+![House-robber-dry-run](../assets/House-robber-dry-run.png)
+
 **Memoization**
 
 If we look at the recursive tree diagram above, we can observe that there are overlapping subproblems. Hence, we can use memoization to cache the answers to these subproblems. 

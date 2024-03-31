@@ -45,6 +45,28 @@ Space complexity: O(N) as we can have a maximum of n recursive stack frames in t
 
 Mathematical proof: The mathematical proof for this problem would be tough to formulate, since the recurrence relation is complex. However, we can be confident that the time complexity is exponential in nature.
 
+**Dry run on example test case**
+
+```
+Sample Input 1:
+n = 4, k = 2
+10 40 30 10
+
+Sample Output 1:
+40
+
+Explanation of sample output 1:
+For ‘n’ = 4, 'k' = 2, height = {10, 40, 30, 10}
+
+Answer is 40.
+
+Initially, we are present at stone 1 having height 10. We can reach stone 3 as ‘k’ is 2. So, cost incurred is |10-30| = 20. 
+
+Now, we are present at stone 3, we can reach stone 4 as ‘k’ is 2. So, cost incurred is |30-10| = 20. So, the total cost is 40. We can show any other path will lead to greater cost.
+```
+
+![Frog-jump-k-distance-dry-run](../assets/Frog-jump-k-distance-dry-run.png)
+
 **Memoization**
 
 If we look at the recursive tree diagram above, we can see that there are overlapping subproblems. Hence, we can use memoization to store the answers to these subproblems.

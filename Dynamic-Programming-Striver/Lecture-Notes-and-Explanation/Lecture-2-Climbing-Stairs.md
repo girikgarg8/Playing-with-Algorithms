@@ -83,6 +83,10 @@ T(n) = 2^n + (2^n-1) * c which is exponential in nature.
 
 Space complexity for recursive solution: O(N) due to the auxiliary stack space. At any given moment of time, a maximum of n recursive stack frames can be in the memory.
 
+**Dry run for n=3**
+
+![Climbing-Stairs-Dry-Run](../assets/Climbing-Stairs-Dry-Run.png)
+
 **Memoization**
 
 As we can see from the recursive tree diagram above, there are overlapping subproblems. We can memoize the answers to these subproblems, and reduce the time complexity of the code.

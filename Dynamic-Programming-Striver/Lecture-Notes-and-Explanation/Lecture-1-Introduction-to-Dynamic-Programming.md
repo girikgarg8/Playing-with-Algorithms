@@ -78,6 +78,10 @@ The tree diagram for the problem is:
 
 The space complexity of the problem is O(n) due to auxiliary recursive stack space. At a moment, a maximum of n recursive stack frames can be in the memory.
 
+**Dry run for n=3**
+
+![Fibonacci-dry-run](../assets/Fibonacci-dry-run.png)
+
 **Memoization**
 
 If we take a look at the recursive tree diagram above, we can observe that there are overlapping subproblems. Hence, we can memoize the answers to these subproblems and optimize the time complexity. 
